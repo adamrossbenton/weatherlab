@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script defer src="./js/script.js"></script>
+    <title>Wouldn't you like to know, Weather Boy?</title>
+</head>
+<body>
+    <h1>Hey Alexa, what's the weather like in...</h1>
+    <main>
+        <form>
+            <input type="text" placeholder="What city?">
+            <label for="days">How many days?</label>
+            <select id="days">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+<!-- 16-day API is not free, let's use 5-day API-->
+                <!-- <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option> -->
+        </select>
+            <input type="submit" placeholder="Let's check!">
+        </form>
+        <h3>Weather for:</h3>
+        <p id="city"></p>
+        <h3>Temperature:</h3>
+            <h4>High:</h4>
+            <p id="high"></p>
+            <h4>Low:</h4>
+            <p id="low"></p>
+            <h4>Average:</h4>
+            <p id="avg"></p>
+        <h3>Feels like:</h3>
+        <p id="feels"></p>
+        <h3>Weather:</h3>
+        <p id="weather"></p>
+    </main>
+</body>
+</html>
